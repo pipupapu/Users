@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const URL =  'https://random-data-api.com/api/v2/users'
 
-export default function Users() {      // tee jokin js funktio ja  css:ää, että näyttää hyvälle ja tee gittiin proj tälle
+export default function Users() {      
   const [first_name,setFirst_name] = useState('')
   const [gender,setGender] = useState('')
   const [username,setUsername] = useState('')
@@ -26,7 +26,6 @@ useEffect(() => {
   function changeMessage() {
     button.textContent = "Request sent"
   }
-  
 return (
 <div id= "container-fluid">
     <h2> Userpersons </h2>
